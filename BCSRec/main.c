@@ -3,6 +3,13 @@
 
 #include "main.h"
 
+
+//REQ_001: getArea gets the area
+//REQ_002: getPerimiter gets the perimeter
+
+
+//REQ_00?: Length and Width of the rectangle should be between 1 and 99, inclusive
+
 void main() {
 	int length = 1;
 	int width = 1;
@@ -83,7 +90,7 @@ void setWidth(int input, int *width) {
 }
 
 int getPerimeter(int *length, int *width) {
-	int perimeter = *length + *length + *width;
+	int perimeter = *length*2 + *width*2;
 	return perimeter;
 }
 
