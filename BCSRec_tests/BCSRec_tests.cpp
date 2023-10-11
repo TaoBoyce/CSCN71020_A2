@@ -4,6 +4,7 @@
 extern "C" int getPerimeter(int*, int*);
 extern "C" int getArea(int*, int*);
 extern "C" void setLength(int, int*);
+extern "C" void setWidth(int, int*);
 
 using namespace Microsoft::VisualStudio::CppUnitTestFramework;
 
@@ -91,6 +92,51 @@ namespace BCSRectests
 			int inA = 100;
 			int length = 2;
 			setLength(inA, &length);
+			Assert::AreEqual(2, length);
+		}
+
+		TEST_METHOD(setWidthFunctionality1)
+		{
+			int Result;
+			int inA = 5;
+			int length = 2;
+			setWidth(inA, &length);
+			Assert::AreEqual(5, length);
+		}
+
+		TEST_METHOD(setWidthFunctionality2)
+		{
+			int Result;
+			int inA = 0;
+			int length = 2;
+			setWidth(inA, &length);
+			Assert::AreEqual(2, length);
+		}
+
+		TEST_METHOD(setWidthFunctionality3)
+		{
+			int Result;
+			int inA = 1;
+			int length = 2;
+			setWidth(inA, &length);
+			Assert::AreEqual(1, length);
+		}
+
+		TEST_METHOD(setWidthFunctionality4)
+		{
+			int Result;
+			int inA = 99;
+			int length = 2;
+			setWidth(inA, &length);
+			Assert::AreEqual(99, length);
+		}
+
+		TEST_METHOD(setWidthFunctionality5)
+		{
+			int Result;
+			int inA = 100;
+			int length = 2;
+			setWidth(inA, &length);
 			Assert::AreEqual(2, length);
 		}
 	};
