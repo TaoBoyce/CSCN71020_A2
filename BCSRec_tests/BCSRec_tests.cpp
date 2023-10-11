@@ -75,5 +75,23 @@ namespace BCSRectests
 			setLength(inA, &length);
 			Assert::AreEqual(1, length);
 		}
+
+		TEST_METHOD(setLengthFunctionality4)
+		{
+			int Result;
+			int inA = 99;
+			int length = 2;
+			setLength(inA, &length);
+			Assert::AreEqual(99, length);
+		}
+
+		TEST_METHOD(setLengthFunctionality5)
+		{
+			int Result;
+			int inA = 100;
+			int length = 2;
+			setLength(inA, &length);
+			Assert::AreEqual(2, length);
+		}
 	};
 }
