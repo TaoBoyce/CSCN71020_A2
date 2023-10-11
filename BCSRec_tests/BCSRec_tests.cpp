@@ -99,45 +99,45 @@ namespace BCSRectests
 		{
 			int Result;
 			int inA = 5;
-			int length = 2;
-			setWidth(inA, &length);
-			Assert::AreEqual(5, length);
+			int width = 2;
+			setWidth(inA, &width);
+			Assert::AreEqual(5, width);
 		}
 
 		TEST_METHOD(setWidthFunctionality2)
 		{
 			int Result;
 			int inA = 0;
-			int length = 2;
-			setWidth(inA, &length);
-			Assert::AreEqual(2, length);
+			int width = 2;
+			setWidth(inA, &width);
+			Assert::AreEqual(2, width);
 		}
 
 		TEST_METHOD(setWidthFunctionality3)
 		{
 			int Result;
 			int inA = 1;
-			int length = 2;
-			setWidth(inA, &length);
-			Assert::AreEqual(1, length);
+			int width = 2;
+			setWidth(inA, &width);
+			Assert::AreEqual(1, width);
 		}
 
 		TEST_METHOD(setWidthFunctionality4)
 		{
 			int Result;
 			int inA = 99;
-			int length = 2;
-			setWidth(inA, &length);
-			Assert::AreEqual(99, length);
+			int width = 2;
+			setWidth(inA, &width);
+			Assert::AreEqual(99, width);
 		}
 
 		TEST_METHOD(setWidthFunctionality5)
 		{
 			int Result;
 			int inA = 100;
-			int length = 2;
-			setWidth(inA, &length);
-			Assert::AreEqual(2, length);
+			int width = 2;
+			setWidth(inA, &width);
+			Assert::AreEqual(2, width);
 		}
 	};
 }
